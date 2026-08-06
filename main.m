@@ -13,11 +13,16 @@ serialportlist("available")
 
 %% Connect to USB device
 
-muse_port = "COM41";
+muse_port = "COM42";
 
 cmd = connectUSB(muse_port);
 
-%% DateTime
+%% Device Info
+info = getDeviceInfo(cmd);
+
+disp(info)
+
+%% Muse DateTime
 
 % set the Muse real-time clock
 setMuseDateTime(cmd);
