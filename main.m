@@ -13,7 +13,11 @@ serialportlist("available")
 
 %% Connect to USB device
 
-muse_port = "COM43";
+muse_port = "COM43"; % You must specify the port to which the Muse is 
+% connected.
+% If you're unsure which port the device is connected to, list the 
+% available ports before and after connecting the Muse. The newly detected 
+% port corresponds to the device.
 
 cmd = connectUSB(muse_port);
 
