@@ -19,14 +19,16 @@ if isa(device,"ble")
     info.serialNumber = getSerialNumber(device);
     info.systemID = getSystemID(device);
 
-end
+else
 
-%% Muse Commands (BLE or USB)
+%% Muse Commands (USB)
 
 info.deviceName = getDeviceName(device);
 
 info.deviceID = getDeviceID(device);
 
 info.skills = getDeviceSkills(device);
+
+end
 
 end
