@@ -2,7 +2,7 @@ function setMuseDateTime(cmd)
 %SETMUSEDATETIME Sets the Muse real-time clock.
 %
 % INPUT
-%   cmd - Command BLE characteristic.
+%   cmd - Command characteristic.
 
 % current Unix timestamp
 timestamp = uint32(posixtime(datetime("now")));
